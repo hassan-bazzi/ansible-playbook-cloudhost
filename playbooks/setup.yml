@@ -3,7 +3,7 @@
 - include: base.yml
 
 - debug:
-  var: iw_release_version
+  var: iw_release_channel
 
 - name: Setup an InterWorx Server
   hosts: cloudhost
