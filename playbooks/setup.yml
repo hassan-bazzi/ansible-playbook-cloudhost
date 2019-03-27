@@ -2,14 +2,15 @@
 
 - include: base.yml
 
+- debug:
+  var: iw_release_version
+
 - name: Setup an InterWorx Server
   hosts: cloudhost
   become: true
   any_errors_fatal: true
   pre_tasks:
     - include: tasks/cloudhost.yml mode="pre"
-    - debug:
-      var: iw_release_version
   roles:
     - { role: nexcess.php, php_prefix: "php56" }
     - { role: nexcess.php, php_prefix: "php70" }
