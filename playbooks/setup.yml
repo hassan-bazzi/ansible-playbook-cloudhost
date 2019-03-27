@@ -8,7 +8,7 @@
   any_errors_fatal: true
   pre_tasks:
     - debug:
-      msg: "{{ iw_release_channel }}"
+        msg: "{{ iw_release_channel }}"
     - include: tasks/cloudhost.yml mode="pre"
   roles:
     - { role: nexcess.php, php_prefix: "php56" }
