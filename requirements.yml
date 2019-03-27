@@ -2,9 +2,9 @@
 
 - src: "git+https://github.com/nexcess/ansible-role-server.git"
   name: "nexcess.server"
-- src: "git+https://github.com/nexcess/ansible-role-interworx.git#debug"
+- src: "git+https://github.com/hassan-bazzi/ansible-role-interworx.git#debug"
   name: "nexcess.interworx"
-- src: "git+https://github.com/hassan-bazzi/ansible-role-puppet.git"
+- src: "git+https://github.com/nexcess/ansible-role-puppet.git"
   name: "nexcess.puppet"
 - src: "git+https://github.com/nexcess/ansible-role-php.git"
   name: "nexcess.php"
